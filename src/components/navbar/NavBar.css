@@ -3,6 +3,9 @@
   overflow: hidden;
   padding: 20px 10px;
 }
+header {
+  margin-bottom: 2.5rem;
+}
 .header a, NavLink {
   float: left;
   color: white;
