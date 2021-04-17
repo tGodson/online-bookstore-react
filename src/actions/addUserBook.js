@@ -11,7 +11,7 @@ export const addUserBook = (userBook) => {
 
 
     return (dispatch) => {
-        fetch('http://localhost:3000/api/v1/user_books/', obj)
+        fetch('http://localhost:8000/api/v1/user_books/', obj)
         .then(resp => resp.json())
         .then(data => {
             dispatch({ type: 'ADD_USER_BOOK', book: data })

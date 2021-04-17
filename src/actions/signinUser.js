@@ -13,7 +13,7 @@ export const signinUser = (userInput) => {
     }
 
     return (dispatch) => {
-        fetch('http://localhost:3000/api/v1/users/', obj)
+        fetch('http://localhost:8000/api/v1/users/', obj)
         .then(resp => resp.json())
         .then(data => {
             dispatch({ type: 'ADD_USER', user: data })

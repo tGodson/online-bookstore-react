@@ -11,7 +11,7 @@ export const removeUserBook = (userId, bookId) => {
 
 
     return (dispatch) => {
-        fetch(`http://localhost:3000/api/v1/users/${userId}`, obj)
+        fetch(`http://localhost:8000/api/v1/users/${userId}`, obj)
         .then(resp => resp.json())
         .then(data => {
             dispatch({ type: 'REMOVE_USER_BOOK', book: data })
