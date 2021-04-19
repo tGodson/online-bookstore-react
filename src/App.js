@@ -9,24 +9,22 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/footer';
 import Welcome from './components/users/Welcome';
 
-import { fetchUser } from './actions/fetchUser'
+import { fetchUser } from './actions/fetchUser';
 
 class App extends React.Component {
-
   componentDidMount() {
-    this.props.fetchUser()
+    this.props.fetchUser();
   }
 
   render() {
-
     return (
       <div className="App">
         <NavBar userId={this.props.userId} />
 
         <Switch>
-          <Route path='/books' render={(routerProps) => <BooksContainer {...routerProps} />} />
-          <Route path='/users/:id/books' component={UsersContainer} />
-          <Route exact path='/' component={Welcome} />
+          <Route path="/books" render={routerProps => <BooksContainer {...routerProps} />} />
+          <Route path="/users/:id/books" component={UsersContainer} />
+          <Route exact path="/" component={Welcome} />
         </Switch>
         <Footer />
       </div>
@@ -34,11 +32,8 @@ class App extends React.Component {
   }
 }
 
-const mapState = state => {
-  return {
-    userId: state.user.id
-  }
-}
+const mapState = state => ({
+  userId: state.user.id,
+});
 
-
-export default connect(mapState, { fetchUser })(App)
+export default connect(mapState, { fetchUser })(App);
