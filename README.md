@@ -80,3 +80,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - [Microverse Inc](https://www.microverse.org/)
 - [Design Inspiration](https://www.behance.net/gallery/37706679/Circle-(Landing-page-Dashboard-Mobile-App)), Design Idea by [Alexey Savitskiy on Behance](https://www.behance.net/alexey_savitskiy)
+
