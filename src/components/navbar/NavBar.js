@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types, react/destructuring-assignment */
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
@@ -10,8 +12,8 @@ class NavBar extends React.Component {
           <a href="https://github.com/tGodson/online-bookstore-react">GitHub Repo</a>
 
           <div className="header-right">
-            <NavLink to="/books" exact>All Books</NavLink>
-            <NavLink to={`/users/${this.props.userId}/books`} exact>Favorite</NavLink>
+            <NavLink className="navlink" to="/books" exact>All Books</NavLink>
+            <NavLink className="navlink" to={`/users/${this.props.userId}/books`} exact>Favorite</NavLink>
           </div>
         </div>
 

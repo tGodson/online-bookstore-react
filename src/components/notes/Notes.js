@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types, react/destructuring-assignment, max-len */
 import React, { Component } from 'react';
 import Note from './Note';
 

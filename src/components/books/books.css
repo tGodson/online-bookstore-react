@@ -1,10 +1,12 @@
 .books:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
+
 .container {
-    padding-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
+
 .btn {
-    background-color:  rgb(94, 14, 14);
-    color: white;
+  background-color: rgb(94, 14, 14);
+  color: white;
 }

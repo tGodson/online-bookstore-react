@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 export const fetchBooks = () => dispatch => {
   fetch('https://online-bookstore-rails.herokuapp.com/api/v1/books')
     .then(resp => resp.json())

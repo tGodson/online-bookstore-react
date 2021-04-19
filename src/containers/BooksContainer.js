@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types, react/destructuring-assignment */
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';

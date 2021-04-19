@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 export const removeUserBook = (userId, bookId) => {
   const obj = {
     method: 'PATCH',

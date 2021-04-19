@@ -1,3 +1,5 @@
+/* eslint-disable react/sort-comp, react/destructuring-assignment, react/prop-types */
+
 import React from 'react';
 import './books.css';
 
@@ -12,7 +14,7 @@ class Book extends React.Component {
     return book;
   }
 
-  handleAddBook(e) {
+  handleAddBook() {
     const book = this.findBook();
     const configObj = {
       user_id: this.props.user.id,
@@ -22,7 +24,7 @@ class Book extends React.Component {
     this.props.addUserBook(configObj);
   }
 
-  handleRemoveBook(e) {
+  handleRemoveBook() {
     const book = this.findBook();
 
     this.props.removeUserBook(this.props.user.id, book.id);
@@ -35,11 +37,11 @@ class Book extends React.Component {
 
     if (foundBook !== undefined) {
       return (
-        <button className="btn btn-primary" onClick={e => this.handleRemoveBook(e)}>Remove Book</button>
+        <button type="button" className="btn btn-primary" onClick={e => this.handleRemoveBook(e)}>Remove Book</button>
       );
     }
     return (
-      <button className="btn btn-primary" onClick={e => this.handleAddBook(e)}>Add Book</button>
+      <button type="button" className="btn btn-primary" onClick={e => this.handleAddBook(e)}>Add Book</button>
     );
   }
 

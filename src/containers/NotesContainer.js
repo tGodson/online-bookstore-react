@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types, react/destructuring-assignment */
+/* eslint-disable react/prefer-stateless-function, max-len */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 

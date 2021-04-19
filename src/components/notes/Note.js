@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types, react/destructuring-assignment */
 import React from 'react';
 
 class Note extends React.Component {
-    handleDeleteNote = e => {
+    handleDeleteNote = () => {
       this.props.deleteNote(this.props.note.id);
     }
 
@@ -18,7 +19,7 @@ class Note extends React.Component {
                       {this.props.bookTitle}
                       {' '}
                       -
-                    {' '}
+                      {' '}
                       {this.props.note.format_date}
                     </i>
                   </small>

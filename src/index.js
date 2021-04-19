@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -7,7 +8,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
-import rootReducer from './reducers/reducer.js';
+import rootReducer from './reducers/reducer';
 
 const store = createStore(rootReducer, compose(
   applyMiddleware(thunk),

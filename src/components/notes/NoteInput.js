@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types, react/destructuring-assignment */
+/* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
 
 class NoteInput extends Component {

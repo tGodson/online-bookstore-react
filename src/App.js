@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment, react/prop-types, react/jsx-props-no-spreading */
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';

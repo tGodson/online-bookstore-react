@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define, max-len */
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types, react/destructuring-assignment */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 import BookCard from '../books/BookCard';
