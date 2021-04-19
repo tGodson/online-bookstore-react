@@ -3,7 +3,7 @@
 In this project, I developed a frontend web application, Online Bookstore using [ONLINE BOOKSTORE API](https://online-bookstore-react.herokuapp.com/) - [Repo](https://github.com/tGodson/online-bookstore-rails) I also develop, a requirement for my final capstone project to consume the data using React Application.
 
 The application features includes:
-- A Authentication for Sign in
+- An Authentication for Sign in
 - Listing of Books
 - User can add book to favourites
 - User can access list of books added as favourites
