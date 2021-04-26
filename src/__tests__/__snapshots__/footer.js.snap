@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders footer correctly 1`] = `
+<div
+  className="footer"
+>
+  <p>
+    CopyRight 2021© Tendongze Godson
+  </p>
+</div>
+`;
